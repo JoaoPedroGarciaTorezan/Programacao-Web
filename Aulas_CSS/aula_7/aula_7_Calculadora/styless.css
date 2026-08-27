@@ -1,0 +1,46 @@
+.calculadora{
+    border: 1px solid black;
+    width: 40%;
+    margin: 0 auto;
+    aspect-ratio: 4/6;
+    height: 60vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: gray;
+}
+.display{
+    grid-column: 1 / span 4;
+    background-color: black;
+    color: white;
+    font-size: 45px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+.igual{
+    grid-column: 4;
+    grid-row: 3 / span 4;
+    background-color: orange;
+    border-radius: 3rem;
+}
+.circular{
+    border-radius: 50%;
+}
+
+button{
+    border: none;
+    font-size: 1.5rem;
+}
+
+.operador{
+    background-color: rgb(182, 237, 237);
+}
+
+.operando{
+    background-color: white;
+}
