@@ -1,0 +1,190 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(215, 229, 250, 0.852);
+}
+
+header {
+    padding-bottom: 0.8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2px;
+    background-color: rgb(59, 156, 242);
+    padding-bottom: 1rem;
+    
+    form{
+        display: flex;
+        justify-content: space-between;
+        height: 2rem;
+        border: 1px solid black;
+        
+        select{
+            width: 10%;
+            display: flex;
+            padding-left: 2.2rem;
+            font-size: smaller;
+            background-color: rgb(135, 179, 242);
+            color: rgba(0, 0, 0, 0.844);
+            
+        }
+        input {
+            width: 85%;
+            padding: 10px;
+            background-color: white;
+
+
+        }
+        button{
+            width: 5%;
+            background-color: rgb(135, 179, 242);
+            border: none;
+            box-shadow: 0 0 0;
+            cursor: pointer;
+            svg{
+                background-color: rgb(135, 179, 242);
+            }
+
+        }
+
+
+    }
+}
+main{
+    min-height: 90.3vh;
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .contanier{
+        display: grid;
+        grid-template-columns:  repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.518);
+
+    }
+        img{
+            width: 70%;
+            height: 160%;
+            aspect-ratio: 16/10;
+            object-fit: contain;
+            margin-bottom: 5px;
+            padding-top: 16px;
+            background-color: white;
+        }
+        button {
+            background-color: rgb(0, 0, 156);
+            color: white;
+            padding: 8px;
+            margin-top: 1rem;
+            width: 10rem;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            background-color: white;
+            font-family: 'Comme', sans-serif;
+            font-style: normal;
+            display: flex;
+            padding: 1px;
+            margin-left: 5px;
+
+        }
+        .titulo{
+            font-size: large;
+        }
+        .preco{
+            font-size: normal;
+        }
+        .legenda{
+            font-size: small;
+        }
+}
+footer{
+    text-align: center;
+    min-height: 1vh;
+    background-color: rgba(215, 229, 250, 0.852);
+    margin-top: 25px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    main .contanier {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Tablets pequenos / celulares grandes */
+@media (max-width: 768px) {
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        form {
+            height: auto;
+            flex-wrap: wrap;
+            select {
+                width: 100%;
+                padding-left: 1rem;
+            }
+            input {
+                width: 85%;
+            }
+            button {
+                width: 15%;
+            }
+        }
+    }
+    main .contanier {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    header {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        form {
+            select {
+                font-size: 12px;
+            }
+            input {
+                width: 75%;
+                padding: 6px;
+            }
+            button {
+                width: 20%;
+            }
+        }
+    }
+    main .contanier {
+        grid-template-columns: 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    main .card button {
+        width: 100%;
+    }
+}
