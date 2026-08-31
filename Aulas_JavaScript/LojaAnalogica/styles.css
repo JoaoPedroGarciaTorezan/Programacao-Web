@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+header{
+    padding:1rem;
+    background-color: rgb(18, 145, 248);
+}
+body{
+    min-height: 100vh;
+}
+.layout{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 99vh;
+    background-color: aliceblue;
+
+}
+form{
+    display: flex;
+    width: 70%;
+    min-height: 5vh;
+    margin: 0 auto;
+    select{
+        flex: 1;
+        background-color: rgb(152, 152, 254);
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-right: 0.1rem;
+    }
+    input{
+        flex: 9;
+        padding-left: 1rem;
+    }
+    button{
+        flex: 0.5;
+        background-color: rgb(152, 152, 254);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        svg{
+            width: 70%;
+            height: 70%;
+        }
+    }
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 450px));
+    gap: 1.4rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgb(197, 197, 197);
+    padding: 0.5rem;
+    gap: 1rem;         
+    background-color: white;   
+
+    .card-descricao{
+        display: flex;
+        gap:0.5rem
+    }
+    img{
+        width: 100%;
+        aspect-ratio: 16/10;
+        object-fit: contain;
+        background-color: gainsboro;
+        align-self: center;
+    }
+    align-items: start;
+    button{
+        margin-top: auto;
+        align-self: center;
+        width: 30%;
+        line-height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 1rem;
+        background-color: rgb(5, 8, 205);
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: 
+            all 0.2s;
+        
+    }
+    button:hover{
+        transform: scale(1.02);
+    }
+}
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+main{
+    
+    margin: 1rem;
+}
+footer{
+    text-align: center;
+    min-height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

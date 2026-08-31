@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "img": "figuras/figura-1.jpg",
+    "nome": "Casa Encantada",
+    "preco": "199.90",
+    "qtd" : "6000"
+  },
+  {
+    "id": 2,
+    "img": "figuras/figura-2.jpg",
+    "nome": "O Lago",
+    "preco": "250.89",
+    "qtd" : "4000"
+  },
+  {
+    "id": 3,
+    "img": "figuras/figura-3.jpg",
+    "nome": "O Castelo",
+    "preco": "230.99",
+    "qtd" : "6000"
+  },
+  {
+    "id": 4,
+    "img": "figuras/figura-4.jpg",
+    "nome": "O Grito",
+    "preco": "50.90",
+    "qtd" : "500"
+  },
+  {
+    "id": 5,
+    "img": "figuras/figura-5.jpg",
+    "nome": "World of Warcraft - Shadowlands",
+    "preco": "79.99",
+    "qtd" : "1000"
+  },
+  {
+    "id": 6,
+    "img": "figuras/figura-6.jpg",
+    "nome": "A Noite Estrelada",
+    "preco": "89.99",
+    "qtd" : "1000"
+  },
+  {
+    "id": 7,
+    "img": "figuras/figura-7.jpg",
+    "nome": "Mona Lisa",
+    "preco": "39.99",
+    "qtd" : "1000"
+  },
+  {
+    "id": 8,
+    "img": "figuras/figura-8.jpg",
+    "nome": "Girassóis  e Auto Retrato",
+    "preco": "99.90",
+    "qtd" : "2000"
+  }
+]
