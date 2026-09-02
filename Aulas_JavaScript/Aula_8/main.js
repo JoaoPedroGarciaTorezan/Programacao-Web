@@ -1,19 +1,2 @@
-let num = 2;
+let num = [1,2,3]
 
-num += 1;
-
-console.log(num);
-
-let literal = "2";
-
-literal += 1;
-
-
-
-console.log(literal);
-
-let literal2 = "2";
-
-literal2++;
-
-console.log(literal2);
