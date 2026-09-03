@@ -6,9 +6,8 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
 
     const newLi = document.createElement('li');
-    newLi.innerText = quant.value;
-    newLi.innerText = ':';
-    newLi.innerText = nome.value;
+    newLi.innerText = quant.value + " : " + nome.value;
+    
 
     const newButton = document.createElement('button');
     newButton.innerText = 'X';
