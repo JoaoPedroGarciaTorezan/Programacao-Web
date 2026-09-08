@@ -12,12 +12,12 @@ let jogoEncerrado = false;
 function VerificaVitoria() {
 
     let pontVit = Number(placarVit.value)
-    if (pontj1 === pontVit) {
+    if (pontj1 >= pontVit) {
         jogoEncerrado = true;
         bj1.style.backgroundColor = 'green';
         bj2.style.backgroundColor = 'red';
     }
-    else if(pontj2 === pontVit) {
+    else if(pontj2 >= pontVit) {
         jogoEncerrado = true;
         bj1.style.backgroundColor = 'red';
         bj2.style.backgroundColor = 'green';
