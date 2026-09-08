@@ -3,36 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jogo de Pontuação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
     <main>
-        <img src="imagem/Cuphead.avif" alt="Cuphead">
-        <p>Marcador de Pontuação Cuphead</p>
-        <div>
-            <p id="pont">0 a 0</p>
+        <img class="img" src="imagem/Cuphead.avif" alt="Cuphead">
+        <p id="leg">Marcador de Pontuação Cuphead</p>
 
-            <select name="vitoria" id="vitoria">
-                <option value="">10</option>
-                <option value="">20</option>
-                <option value="">30</option>
-                <option value="">40</option>
-                <option value="">50</option>
-            </select>
+        <div class="container">
+            <div class="texto">
+                <p id="pont">0 a 0</p>
 
-            <p>Use os botões para marcar a pontuação vitoriosa</p>
+                <div class="pontuacao">
+                    <label for="vitoria">Escolha a Pontuação vitoriosa</label>
+                    <select name="vitoria" id="vitoria">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                    </select>
 
-            <div>
-                <button>
-                    Joagdor 1
+                </div>
+
+                <p>Use os botões para marcar a pontuação vitoriosa</p>
+
+            </div>
+
+            <div class="botoes">
+                <button id="j1">
+                    Jogador 1
                 </button>
 
-                <button>
-                    Joagdor 2
+                <button id="j2">
+                    Jogador 2
                 </button>
 
-                <button>
+                <button id="rei">
                     Reiniciar
                 </button>
             </div>

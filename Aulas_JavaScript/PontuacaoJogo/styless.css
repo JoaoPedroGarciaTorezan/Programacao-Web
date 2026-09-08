@@ -1,3 +1,75 @@
-img {
-    width: 40%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    img {
+        width: 100%;
+        max-width: 900px;
+        display: block;
+        margin: 0 auto; 
+    }
+    #leg{
+        text-align: center;
+        padding-right: 680px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .container{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        gap: 1rem;
+        padding-top: 2rem;
+        #pont{
+            font-size: xx-large;
+            font-family: 'Alegreya Sans SC', sans-serif;
+        }
+        .texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            
+        }
+        .botoes{
+            display: flex;
+            button{
+                flex: 1; /*faz cada botão crescer igualmente e dividir 100% da largura */
+                padding: 8px;
+                border: 2px solid black;
+                box-shadow: 1px 1px 10px black;
+                font-size: 16px;
+                cursor: pointer;
+                color: white;
+                
+            }
+            #j1{
+                background-color: green;
+            }
+            #j2{
+                background-color: blue;
+            }
+            #rei{
+                background-color: red;
+            }
+        }
+        
+    }
+    legend {
+        text-align: center;
+        margin: 5px;
+        color: rgb(3, 41, 130);
+        font-style: italic;
+    }
+    
+
+
+    
 }
