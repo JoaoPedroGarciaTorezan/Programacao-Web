@@ -24,6 +24,17 @@ function VerificaVitoria() {
     }
 }
 
+function Reiniciar() {
+    pontj1 = 0;
+    pontj2 = 0;
+    pont.innerText = `0 a 0`
+    if(jogoEncerrado) {
+        jogoEncerrado = false;  
+        bj1.style.backgroundColor = 'green';
+        bj2.style.backgroundColor = 'blue';
+    } 
+}
+
 bj1.addEventListener('click', () => {
     if(jogoEncerrado) return;
 
@@ -44,19 +55,13 @@ bj2.addEventListener('click', () => {
 
 res.addEventListener('click', () => {
 
-    pontj1 = 0;
-    pontj2 = 0;
-    pont.innerText = `0 a 0`
-    if(jogoEncerrado) {
-        jogoEncerrado = false;  
-        bj1.style.backgroundColor = 'green';
-        bj2.style.backgroundColor = 'blue';
-    } 
+    Reiniciar();
 
 })
 
 select.addEventListener('change', (e) => {
     let x = Number(e.target.value);
     console.log(x) //Será impresso o valor da <option> selecionada
+    Reiniciar();
 })
 
