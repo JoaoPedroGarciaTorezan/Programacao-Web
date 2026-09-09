@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pesquisa, .produtos{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+main{
+    height: 60vh;
+}
+h1{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: rgb(91, 87, 87);
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    input, button{
+        border-radius: 12px;
+        width: 40%;
+        line-height: 1.2rem;
+    }
+    label{
+        font-size: large;
+        font-weight: 300;
+    }
+    input{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    button{
+        background-color: rgb(37, 165, 165);
+        color: white;
+        cursor: pointer;
+        font-size: medium;
+    }
+}
+.produtos{
+    text-align: center;
+    padding: 1rem;
+}
+
+footer{
+    text-align: center;
+}
