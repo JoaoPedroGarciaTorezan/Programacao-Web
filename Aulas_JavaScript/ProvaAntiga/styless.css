@@ -13,7 +13,10 @@
 }
 
 main{
-    height: 60vh;
+    height: 98vh;
+}
+body{
+    height: 99vh;;
 }
 h1{
     text-align: center;
@@ -50,9 +53,32 @@ h1{
     }
 }
 .produtos{
-    text-align: center;
-    padding: 1rem;
+    #prod{
+        margin: 10px;
+        text-align: center;
+    }
+    ul {
+        li{
+            display: flex;
+            justify-content: space-evenly;
+            .mais, .menos{
+                width: 10%;
+                border-radius: 1rem;
+                color: white;
+                border: none;
+            }
+            .mais{
+                background-color: rgb(11, 220, 11); 
+            
+            }
+            .menos{
+                background-color: red;
+            }
+        }
+        
+    }
 }
+
 
 footer{
     text-align: center;
