@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Prova 1</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Jogo da Adivinhação</h1>
+
+        <div class="container">
+            <img src="imagem/imagem.png" alt="cara_pensando">
+            
+            <div class="texto">
+                <div class="intervalo">
+                    <h2>Área do Pensamento</h2>
+                    <p>Olá! Eu sou o Chat-Jequiti. Irei pensar em um número entre
+                        'inicio' e 'fim'. Após digitar os números clique em 'Pensar'
+                    </p>
+
+                    <label for="inicio">Início</label>
+                    <input type="text" name="inicio" id="inicio"></input>
+
+                    <label for="fim">Fim</label>
+                    <input type="text" name="fim" id="fim"></input>
+
+                    <button id="pensar">Pensar</button>
+                </div>
+        
+
+                <div class="adivinha">
+                    <h2>Área da Adivinhação</h2>
+
+                    <label for="ad">Qual número estou pensando?</label>
+                    <input type="text" name="ad" id="ad"></input>
+
+                    <button id="adivinhar">Adivinhar</button>
+                </div>
+            </div>
+        </div>
+
+        <p id="coment"></p>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
