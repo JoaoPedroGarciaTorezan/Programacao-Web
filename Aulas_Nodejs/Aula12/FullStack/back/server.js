@@ -30,15 +30,6 @@ app.get('/buscar/id/:id', (req, res) => {
     const dados = fs.readFileSync('db/pokemon.json', 'utf-8');
     const pokemon = JSON.parse(dados);
 
-    // const resposta = [];
-    // for(let i=0; i < pokemon.length; i++) {
-
-    //     if(pokemon[i].tipos.includes(tipo)){
-    //         //adicionar ao vetor temporario
-    //         resposta.push(pokemon[i]);
-    //     }
-    // }
-
     const resposta = pokemon.find(p => p.id == id);
 
     res.json(resposta);
