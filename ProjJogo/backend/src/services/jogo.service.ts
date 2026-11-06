@@ -1,10 +1,10 @@
 import {prisma} from "../prisma/client"
 
-export class FilmeService{
+export class JogoService{
 
     async create(data: { titulo: string; imagem: string; nota: number}){
 
-        return await prisma.filme.create({
+        return await prisma.jogo.create({
                     data
                 });
     }
@@ -12,14 +12,14 @@ export class FilmeService{
     //Restam os métodos de atualização (update) leitura (find)
     async delete(id: number){
 
-            return await prisma.filme.delete({
+            return await prisma.jogo.delete({
                     where: {id},
             });
         }
 
     async update(data: {titulo: string; imagem: string; nota: number}, id: number){
 
-        return await prisma.filme.update({
+        return await prisma.jogo.update({
                     where: {id},
                     data: data
         })
@@ -27,13 +27,13 @@ export class FilmeService{
 
     async findbyId(id: number){
         
-        return await prisma.filme.findUnique({
+        return await prisma.jogo.findUnique({
                     where: {id},
         })
     }
 
     async findAll() {
 
-        return await prisma.filme.findMany();
+        return await prisma.jogo.findMany();
     }
 }

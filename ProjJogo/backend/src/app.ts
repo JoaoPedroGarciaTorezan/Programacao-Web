@@ -1,12 +1,12 @@
 import cors from 'cors'
 import express from 'express'
-import {  filmeRoutes } from './routes/filme.routes';
+import {  jogoRoutes } from './routes/jogo.routes';
 
 const app = express();
 
 app.use(express.json())
 app.use(cors());
 
-app.use('/filmes', filmeRoutes);
+app.use('/jogos', jogoRoutes);
 
 export {app};

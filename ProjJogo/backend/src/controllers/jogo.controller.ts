@@ -1,39 +1,39 @@
-import { FilmeService } from "../services/filme.service";
+import { JogoService } from "../services/jogo.service";
 import { Request, Response } from "express";
 
-const filmeService = new FilmeService();
+const jogoService = new JogoService();
 
-export class FilmeController{
+export class JogoController{
 
     async create(req: Request,res: Response){
 
-        const filme = await filmeService.create(req.body);
+        const jogo = await jogoService.create(req.body);
 
-        res.status(201).json(filme);
+        res.status(201).json(jogo);
 }
     async update(req: Request,res: Response) {
 
         const id = Number(req.params.id);
 
-        await filmeService.update(req.body, id);
+        await jogoService.update(req.body, id);
 
         res.status(200).send();
     }
 
     async findAll(req: Request,res: Response){
 
-        const filmes = await filmeService.findAll();
+        const jogos = await jogoService.findAll();
 
-        res.status(200).json(filmes);
+        res.status(200).json(jogos);
     }
 
     async findById(req: Request,res: Response){
 
         const id = Number(req.params.id);
 
-        const filme = await filmeService.findbyId(id);
+        const jogo = await jogoService.findbyId(id);
 
-        res.status(200).json(filme);
+        res.status(200).json(jogo);
     }
 
     //post
@@ -41,7 +41,7 @@ export class FilmeController{
 
             const id = Number(req.params.id);
 
-            await filmeService.delete(id);
+            await jogoService.delete(id);
 
             res.status(204).send();
         }
