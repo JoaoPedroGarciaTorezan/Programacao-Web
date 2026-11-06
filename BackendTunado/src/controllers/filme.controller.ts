@@ -20,9 +20,21 @@ export class FilmeController{
         res.status(200).send();
     }
 
-// findAll(req: Request,res: Response)
+    async findAll(req: Request,res: Response){
 
-// findById(req: Request,res: Response)
+        const filmes = await filmeService.findAll();
+
+        res.status(200).json(filmes);
+    }
+
+    async findById(req: Request,res: Response){
+
+        const id = Number(req.params.id);
+
+        const filme = await filmeService.findbyId(id);
+
+        res.status(200).json(filme);
+    }
 
     //post
     async delete(req: Request,res: Response){
