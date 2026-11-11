@@ -12,7 +12,7 @@ export interface CreateFilmeDTO  {
 }
 
 export interface UpdateFilmeDTO  {
-    titulo?: string;
+    titulo?: string; //campos opcionais com ?
     imagem?: string;
     nota?: number;
 }
