@@ -13,7 +13,10 @@ export default async function Home() {
           <h1>Filmes</h1>
           <p>Gerencie seus filmes</p>
         </div>
-        {/* <FilmeGrid filmes={filmes}/> */}
+        <Link href='/filmes/criar' className={styles.btnAdd}>
+          + Adicionar Filme
+        </Link>
+        <FilmeGrid filmes={filmes}/>
     </main>
   );
 }

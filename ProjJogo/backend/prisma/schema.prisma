@@ -6,7 +6,7 @@ datasource db {
   url = env("DATABASE_URL")
 }
 
-model Jogo {
+model Filme {
   id Int @id @default(autoincrement())
   titulo String
   imagem String
