@@ -5,9 +5,15 @@ import styles from '@/app/page.module.css';
 
 export default async function Home() {
 
+  const filmes = await getFilmes()
+
   return (
     <main className={styles.home}>
-
+        <div>
+          <h1>Filmes</h1>
+          <p>Gerencie seus filmes</p>
+        </div>
+        {/* <FilmeGrid filmes={filmes}/> */}
     </main>
   );
 }
