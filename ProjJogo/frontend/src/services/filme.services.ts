@@ -8,7 +8,7 @@ const API_URL =
 //Exemplo já implementado
 export async function getFilmes(): Promise<Filme[]>
 {
-    const response = await fetch(`${API_URL}/jogos`);
+    const response = await fetch(`${API_URL}/filmes`);
     const dados = await response.json();
     return dados;
 

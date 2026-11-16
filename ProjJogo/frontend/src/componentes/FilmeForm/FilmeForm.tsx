@@ -8,7 +8,7 @@ import {
   createFilmes,
   updateFilme,
 } from "@/services/filme.services"
-import { routerServerGlobal } from 'next/dist/server/lib/router-utils/router-server-context';
+
 
 interface Props {
   filme?: Filme;
@@ -16,6 +16,7 @@ interface Props {
 
 export default function FilmeForm({ filme }: Props) {
 
+    const router = useRouter();
     //Estados internos
     const [titulo, setTitulo] = useState(
       filme?.titulo ?? ""     //se tem titulo, senão é ""
@@ -29,10 +30,11 @@ export default function FilmeForm({ filme }: Props) {
 
     async function handleSubmit(e: React.SyntheticEvent){
 
-        const router = useRouter();
-      
         e.preventDefault();
 
+
+      
+        
         const payload = { //JSON
           titulo,
           imagem,

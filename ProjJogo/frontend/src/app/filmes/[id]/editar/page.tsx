@@ -11,6 +11,12 @@ interface Props {
 export default async function EditarFilmePage({ params }: Props) {
   const { id } = await params;
 
-  
+  const filme = await getFilme(id);
+
+  return(
+
+    <FilmeForm filme={filme}/>
+
+  )
 
 }

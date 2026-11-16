@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <main className={styles.home}>
-        <div>
+        <div className={styles.home}>
           <h1>Filmes</h1>
           <p>Gerencie seus filmes</p>
         </div>

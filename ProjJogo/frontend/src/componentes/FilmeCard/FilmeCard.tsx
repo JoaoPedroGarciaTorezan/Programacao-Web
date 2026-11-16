@@ -20,11 +20,13 @@ export default function FilmeCard({ filme, onDelete}: FilmeCardProps) {
           width={300}
           height={450}
         />
-        <img src="" alt="" />
+      
         <h2>{filme.titulo}</h2>
         <p>{filme.nota}</p> 
-        <div>
-          <button>Editar</button>
+        <div className="btn-acoes">
+          <Link href={`/filmes/${filme.id}/editar`}> {/*filmes/id/editar*/}
+            Editar
+          </Link>
           <button onClick={() => onDelete?.(filme.id)}>Excluir</button>
         </div>
       </div>
